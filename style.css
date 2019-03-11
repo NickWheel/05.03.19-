@@ -4,6 +4,7 @@
 }
 body {
     font-family: "Arial", sans-serif;
+    background: url(https://www.publicdomainpictures.net/pictures/230000/nahled/woos-planks.jpg);
 }
 
 a {
@@ -15,18 +16,21 @@ a {
 .menu {
     width: 220px;
     margin: 0 auto;
-    padding-top: 40vh;
+    margin-top: 40vh;
     list-style: none;
+    /* box-shadow: 0px 0px 50px 0px #000000; */
+    
 }
 
 .menu a {
     display: block;
-    padding: 13px 0px 11px 38px;
+    padding: 13px 0px 11px 0px;
 }
 
-/* .menu li:hover {
-    background-color: #111920;
-} */
+.menu img {
+    padding: 0px 10px 0px 12px;
+}
+
 .menu a:hover {
     background-color: #111920;
 }
@@ -36,19 +40,26 @@ ul > li {
     border-bottom: 1px solid #202328;
     border-left: 1px solid #202328;
     border-right: 1px solid #202328;
-    font-size: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 .menu_top {
     border: 1px solid #202328;
     border-radius: 10px 10px 0px 0px ;
 }
+.menu_top a {
+    border-radius: 10px 10px 0px 0px ;
+}
 
-.menu_messages > .submenu {
+.menu_messages {
     
 }
 
 .menu_bottom {
+    border-radius: 0px 0px 10px 10px ;
+}
+.menu_bottom a {
     border-radius: 0px 0px 10px 10px ;
 }
 
@@ -56,15 +67,17 @@ ul > li {
     position: relative;
     list-style: none;
     background-color: #212930;
-    border: 1px solid black;
     z-index: 10;
     padding: 0px;
-    
+    box-shadow: inset 0px 0px 49px 0px #111519;
     display: none;
-
 }
-
-.menu > li:focus-within .submenu {
+.menu .submenu img {
+    width: 8px;
+    height: 8px;
+    padding: 0px 18px 0px 17px;
+}
+.menu_messages:focus-within .submenu {
     display: block
 }
 
@@ -76,5 +89,4 @@ ul > li {
 .submenu li a {
     color: #778EA1;
     background-color: #212930;
-    box-shadow: inset 0px 0px 49px 0px #111519;
 }
