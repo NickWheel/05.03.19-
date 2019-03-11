@@ -16,7 +16,12 @@ a {
     margin: 0 auto;
     margin-top: 40vh;
     list-style: none;
+<<<<<<< HEAD
     box-shadow: 0px 0px 50px 0px #000000; 
+=======
+    box-shadow: 0px 0px 50px 0px #000000;
+    
+>>>>>>> backup_branch
 }
 
 
@@ -57,12 +62,22 @@ li:not(.menu_messages) {
 }
 .menu_top:focus-within {
 
+<<<<<<< HEAD
 }
 .menu_div {
     display: flex;
     align-items: center;
 }
 .m_counter {
+=======
+a:not(.submenu) {
+    display: flex;
+    align-items: center;
+}
+
+.m_counter {
+    display: inline-block;
+>>>>>>> backup_branch
     margin-left: auto;
     margin-right: 10px;
     text-align: center;
@@ -89,6 +104,8 @@ li:not(.menu_messages) {
     padding: 0px;
     box-shadow: inset 0px 0px 49px 0px #111519;
     display: none;
+    transition: 1s;
+
 }
 .menu .submenu img {
     width: 8px;
@@ -96,7 +113,8 @@ li:not(.menu_messages) {
     padding: 0px 18px 0px 17px;
 }
 .menu_messages:focus-within .submenu {
-    display: block
+    display: block;
+    transition: 1s;
 }
 
 .submenu li {
